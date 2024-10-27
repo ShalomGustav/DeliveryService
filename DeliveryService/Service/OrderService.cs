@@ -1,9 +1,6 @@
 ﻿using DeliveryService.Models;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.Globalization;
-using System.IO;
-using System.Linq;
 
 namespace DeliveryService.Service;
 
