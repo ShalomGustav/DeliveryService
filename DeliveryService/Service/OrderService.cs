@@ -141,16 +141,9 @@ public class OrderService
                 }
                 orders.Add(order);
             }
-            catch(FormatException ex)
-            {
-                _logger.LogMessage($"Data validation failed for line '{line}' in file '{filePath}': {ex.Message}.");
-                Console.WriteLine($"Data validation failed for line '{line}': {ex.Message}");
-                continue;
-            }
             catch(Exception ex)
             {
                 _logger.LogMessage($"Unexpected error for line '{line}' in file '{filePath}': {ex.Message}.");
-                Console.WriteLine($"Unexpected error for line '{line}': {ex.Message}.");
                 continue;
             }
         }
