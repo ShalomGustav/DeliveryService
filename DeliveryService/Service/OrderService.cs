@@ -121,7 +121,6 @@ public class OrderService
             if (parts.Length != 4)
             {
                 _logger.LogMessage($"Skipping line due to incorrect number of parts: {line}.");
-                Console.WriteLine($"Skipping line due to incorrect number of parts: {line}.");
                 continue;
             }
 
@@ -186,7 +185,6 @@ public class OrderService
         catch (JsonException ex)
         {
             _logger.LogMessage($"JSON parsing error for file '{filePath}': {ex.Message}");
-            Console.WriteLine($"Error parsing JSON file '{filePath}': {ex.Message}");
         }
 
         return orders;
