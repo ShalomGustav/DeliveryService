@@ -83,12 +83,10 @@ dotnet run -- [DeliveryOrders] [IndexRegion] [FirstDeliveryTime] [Separator]
 2. В свойствах ярлыка в разделе `Объект` можно передать строку следующего формата:
 
 ``` bash
-C:\Полный путь\DeliveryService.exe log.txt test_orders.json 423330 "2024-10-25 09:44:07"
+C:\Полный путь\DeliveryService.exe test_orders.json 423330 "2024-10-25 09:44:07"
 ```
 
 `DeliveryService.exe`: Название приложения в данном примере **DeliveryService**.
-
-`log.txt`: Лог-файл.
 
 `test_orders.json`: Список заказов в формате JSON. Разделитель указывать необязательно, в логике сервиса это обрабатывается.
 
