@@ -1,0 +1,6 @@
+{
+  "DeliveryOrders": "ConfigurationFiles\\test_orders.txt",
+  "ResultFilePath": "ConfigurationFiles\\filtered_orders.txt",
+  "IndexRegion": 423330,
+  "FirstDeliveryTime": "2024-10-22 02:31:44"
+}
